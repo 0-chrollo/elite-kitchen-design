@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-      <title>Elite Kitchen Design | Gauteng</title>
+      <title>ELITE KITCHEN DESIGNS | Gauteng</title>
       <link rel="stylesheet" href="style.css">
       <script defer src="scripts.js"></script> 
   
@@ -34,6 +34,7 @@
 
           <ul>          
               <li><a href="book.html"><i class="fas fa-calenda55555555555555555555555555555555555555555555555555r-check"  style="color: #deeaf2;"></i> Book</a></li>
+              <li><a href="#services"><i class="fas fa-clone" style="color:  #deeaf2;"></i> Gallery</a></li>
               <li><a href="#services"><i class="fas fa-clone" style="color:  #deeaf2;"></i> Services</a></li>
               
               <li><a href="#location"><i class="fa-solid fa-location-dot" style="color: #deeaf2;"></i> Location</a></li>
@@ -117,8 +118,407 @@
 
 
 <!--About Elite Kitchen Designs-->
-<div>
-    
-    <h1>Hello</h1>
-    
-    </div>
+<style>
+
+  .content-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1100px;
+      margin: auto;
+      gap: 40px;
+      padding:15px;
+  }
+
+  .image-container {
+      flex: 1;
+      max-width: 95%;
+  }
+
+  .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1.5px;
+  }
+
+  .text-container {
+      flex: 1;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+  }
+
+  .section-title {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #b38738, #ff7e5f);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  .section-title::before {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(to right, #b38738, #066284);
+      display: inline-block;
+      margin-right: 12px;
+  }
+
+  .main-heading {
+      font-size: 28px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 15px;
+      background: linear-gradient(to right,rgb(178, 98, 0), #066284);
+      -webkit-background-clip: text;
+      color: transparent;
+  }
+
+  .description {
+      font-size: 19px;
+      color: #001017da;
+      line-height: 1.9;
+  }
+
+  .highlight {
+    background: linear-gradient(25deg, #7dbad0, #066284);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+      font-weight: bold;
+  }
+
+  .highlight2 {
+    background: linear-gradient(25deg, #7dbad0, #066284);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+      .content-section {
+          flex-direction: column;
+          text-align: left;
+          gap: 20px;
+      }
+
+      .text-container {
+          order: -1;
+          padding: 0;
+          align-items: flex-start;
+      }
+
+      .image-container {
+          max-width: 95%;
+          
+      }
+
+      .section-title {
+          justify-content: flex-start;
+      }
+
+      .section-title::before {
+          width: 45px;
+          height: 3px;
+          margin-right: 8px;
+      }
+  }
+</style>
+
+
+<section class="content-section">
+  <div class="text-container">
+      <h5 class="section-title">ABOUT  <span class="elite" style="font-size: 30px;"> ELITE</span> <span class="kitchen-designs" style="font-size: 20px;">KITCHEN DESIGNS</span></h5>
+      <h2 class="main-heading">Where Modern Aesthetics Meets Timeless Elegance</h2>
+      <p class="description">
+          At <span class="highlight">Elite Kitchen Designs</span>, we specialize in transforming your living spaces with luxurious, modern aesthetic designs. Based in Gauteng, our team of expert designers and craftsmen focus on creating not only stunning kitchen layouts but also comprehensive home interiors that elevate the entire ambiance of your residence. Our designs blend cutting-edge technology with elegant style, ensuring that every detail serves both function and beauty. With a passion for precision and quality, we create spaces that leave your home looking prestigious, refined, and truly one-of-a-kind. Whether you're redesigning your kitchen, living room, or any other part of your home, <span class="highlight2">Elite Kitchen Designs</span> guarantees a seamless, sophisticated transformation that reflects your unique taste and lifestyle.
+      </p>
+  </div>
+  <div class="image-container">
+      <img src="aboutEKD.webp">
+  </div>
+</section>
+
+<style>
+
+  /* Container */
+  .kg-container {
+
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px;
+      font-family: serif;
+      color: #333;
+  }
+  
+  /* Grid layout */
+  .kg-kitchen-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+  
+  /* Kitchen item */
+  .kg-kitchen-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+      margin-bottom: 25px;
+      box-sizing: border-box;
+  }
+  
+  /* Content box */
+  .kg-content-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      box-sizing: border-box;
+  }
+  
+  /* Image box */
+  .kg-image-box {
+      height: 400px;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+  
+  .kg-image-box img {
+      width: 100%;
+      height: 60vh;
+     
+      
+  }
+  
+  /* Typography */
+  .kg-heading {
+      background: linear-gradient(35deg, rgba(178, 98, 0, 0.747), #038ec0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.2;
+  }
+  
+  .kg-divider {
+      width: 70px;
+      height: 3px;
+      background-color:#066284;
+      margin-bottom: 20px;
+      border: none;
+  }
+  
+  .kg-text {
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #011016c5;
+      margin-bottom: 20px;
+      margin-top: 0;
+  }
+  
+
+
+
+
+.kg-view-details:hover {
+  background: #0c5f7d;
+  border-color:  #0d90c0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 238, 255, 0.4);
+}
+
+.kg-view-details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #3db2dd7e, transparent);
+  transition: left 0.7s ease;
+}
+
+
+
+
+
+
+
+  /* Button */
+  .kg-view-details {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 1px solid #066284;
+      background-color: transparent;
+      color: #666;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      width: fit-content;
+      box-sizing: border-box;
+  }
+  
+  .kg-view-details:hover {
+      background-color: #f5f5f5;
+      border-color: #bbb;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+      .kg-kitchen-grid {
+          grid-template-columns: 1fr 1fr;
+      }
+      
+      .kg-kitchen-item {
+          grid-column: 1 / span 2;
+          grid-template-columns: 1fr 1fr;
+      }
+      
+      .kg-kitchen-item:nth-child(even) .kg-content-box {
+          order: 2;
+      }
+      
+      .kg-kitchen-item:nth-child(even) .kg-image-box {
+          order: 1;
+      }
+      
+      .kg-image-box {
+          height: auto;
+          min-height: 400px;
+      }
+  }
+</style>
+
+</br>
+<div class="lining">
+  <div class="marquee-container">
+      <div class="marquee">
+          Kitchen Unit Installations • Wall Wadrobe • Floating TV stands • Modern Ceiling • Modern Tiling Specialists •
+      </div>
+  </div>
+</div>
+</br>
+
+
+<style>
+.lining {
+  margin: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background:linear-gradient(95deg, #3d8098, #044a64);
+            
+           
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+      transform: translateX(80%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+</style>
+
+
+<div></div>
+
+
+<div class="kg-container">
+  <div class="kg-kitchen-grid">
+      <!-- First Item -->
+      <div class="kg-kitchen-item">
+          <div class="kg-content-box">
+              <h2 class="kg-heading">Brown's Kitchen</h2>
+              <hr class="kg-divider">
+              <p class="kg-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores...
+              </p>
+              <a href="#" class="kg-view-details">VIEW DETAILS</a>
+          </div>
+          <div class="kg-image-box">
+              <img src="1000017076.webp" alt="Brown's Kitchen">
+          </div>
+      </div>
+      
+      <!-- Second Item -->
+      <div class="kg-kitchen-item">
+          <div class="kg-content-box">
+              <h2 class="kg-heading">Molloy Kitchen Remodel</h2>
+              <hr class="kg-divider">
+              <p class="kg-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores...
+              </p>
+              <a href="#" class="kg-view-details">VIEW DETAILS</a>
+          </div>
+          <div class="kg-image-box">
+              <img src="1000017105.webp" alt="Molloy Kitchen Remodel">
+          </div>
+      </div>
+      
+      <!-- Third Item -->
+      <div class="kg-kitchen-item">
+          <div class="kg-content-box">
+              <h2 class="kg-heading">Finibus Bonorum Malorum</h2>
+              <hr class="kg-divider">
+              <p class="kg-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores...
+              </p>
+              <a href="#" class="kg-view-details">VIEW DETAILS</a>
+          </div>
+          <div class="kg-image-box">
+              <img src="1000017057.webp" alt="Finibus Bonorum Malorum">
+          </div>
+      </div>
+  </div>
+</div>
