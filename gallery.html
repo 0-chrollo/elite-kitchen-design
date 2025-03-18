@@ -64,7 +64,7 @@
               <div class="slide-content">
                 <h1 class="slide-title">Our Completed Projects</h1>
                 <p class="slide-subtitle">Explore our portfolio of expertly crafted kitchens, TV stands, wardrobes, and interior transformations, each designed with precision and elegance.</p>
-                <button class="slide-button">Home Page</button>
+                <button class="slide-button"><a href="index.html" style="color: white; text-decoration: none;">Home Page</a></button>
               </div>
             </div>
         </div>
@@ -780,7 +780,7 @@
 
 
 
-<style>
+  <style>
 
     
     footer {
@@ -938,7 +938,7 @@
     
     @media (max-width: 768px) {
       .footer-content {
-        gap: 30px;
+        gap: 20px;
       }
       
       /* Hide the standard columns for services and contact */
@@ -950,12 +950,12 @@
       .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        width: 100%;
+        gap: 9px;
+        width: 90%;
       }
       
       .grid-item {
-        font-size: 12px;
+        font-size: 10px;
       }
       
       .grid-item a {
@@ -963,7 +963,7 @@
         text-decoration: none;
         transition: color 0.3s ease;
         display: block;
-        padding: 5px;
+        padding: 9px;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 4px;
@@ -1000,10 +1000,134 @@
       }
     }
   </style>
- 
-  <div class="content">
-    <!-- Your main content would go here -->
+  <div class="lining">
+    <div class="marquee-container">
+        <div class="marquee">
+            Kitchen Unit Installations • Wall Wadrobe • Floating TV stands • Modern Ceiling • Modern Tiling Specialists •
+        </div>
+    </div>
   </div>
+  
+  
+  
+  
+  <style>
+      .fixed-widgets {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          z-index: 1000;
+          animation: float 2s ease-in-out infinite; /* Added floating animation */
+      }
+      
+      /* Floating effect animation */
+      @keyframes float {
+          0% {
+              transform: translateY(0); /* Start at normal position */
+          }
+          50% {
+              transform: translateY(-15px); /* Move up by 10px */
+          }
+          100% {
+              transform: translateY(0); /* Return to normal position */
+          }
+      }
+      
+      /* Widget style */
+      .fixed-widgets a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background-color:  #04475f;
+  
+          color: #fff;
+          text-decoration: none;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          transition: transform 0.2s ease-in-out;
+      }
+      
+      /* Call widget style */
+      .fixed-widgets a.call-widget {
+          background-color: #34b7f1; /* Light blue for the call widget */
+      }
+      
+      /* Hover effect */
+      .fixed-widgets a:hover {
+          transform: scale(1.1);
+      }
+      
+      /* Icon styling */
+      .fixed-widgets i {
+          font-size: 19px;
+      }
+      
+  </style>
+  
+  
+  <!--WIDGETS-->
+  <div class="fixed-widgets">
+    <a href="https://wa.me/27602066586" target="_blank" class="whatsapp-widget">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+  
+  </div>
+    <!--WIDGETS-->
+  
+  
+  
+  
+    <style>
+        .lining {
+          margin: 0;
+          background-color: #f8f8f8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        
+        .marquee-container {
+          width: 100%;
+          overflow: hidden;
+          background:linear-gradient(95deg, #3d8098, #044a64);
+                    
+                   
+          padding: 10px 0;
+          white-space: nowrap;
+          position: relative;
+        }
+        
+        .marquee {
+          display: inline-block;
+          font-size: 18px;
+          color: #ffffff;
+          font-family: Arial, sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          animation: scroll-left 10s linear infinite;
+        }
+        
+        @keyframes scroll-left {
+          from {
+              transform: translateX(80%);
+          }
+          to {
+              transform: translateX(-100%);
+          }
+        }
+        
+        
+        </style>
+        
+  
+  
+  
   
   <div class="promo-banner">
     <div>
@@ -1019,17 +1143,11 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
-          <span>Fast Response</span>
-        </div>
-        <div class="feature">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
           <span>Client Satisfaction</span>
         </div>
       </div>
     </div>
-    
+  
     <div class="social-links">
       
       <a href="#" class="social-icon" aria-label="Facebook">
@@ -1045,12 +1163,14 @@
     </div>
   </div>
   
+  
   <footer>
     <div class="footer-content">
       <div class="footer-column">
         <h3>Navigation</h3>
         <ul>
           <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      
       
         </ul>
       </div>
@@ -1073,7 +1193,8 @@
       
         </ul>
       </div>
-      
+    </div>
+    
       <!-- Grid for services and contact on mobile -->
       <div class="grid-container">
         <div class="grid-item"><a href="#footer">Kitchen Unit Installations</a></div>
@@ -1084,158 +1205,161 @@
         <div class="grid-item"><a href="#">Contact</a></div>
         <div class="grid-item"><a href="#footer">Email</a></div>
         <div class="grid-item"><a href="tel:+27602066586">Phone</a></div>
+  
       </div>
+      
+    </div> </br>
+    <p id="location"></p>
+    <div class="location" align="center">
+  
+      <h2 style="color:#c4e7f3; font-size: 20px;">Our Main Branch</h2>
+      <iframe  
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114763.09130869254!2d27.88298094299403!3d-26.270759408420394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e97c29f5f9b%3A0x49ee70f41a4c4a3e!2sGauteng!5e0!3m2!1sen!2sza!4v1710768573923" 
+   width="95%" 
+  height="280" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+  
+  <style>
+    .maps{
+        font-family: 'Poppins', sans-serif;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 10px;
+    }
+  
+    .accordion {
+        width: 95%;
+        max-width: 800px;
+    }
+  
+    .accordion-item {
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+  
+    .accordion-header {
+        background: linear-gradient(135deg, #066284,  #066284);
+        color:  #b3d8e5;
+        padding: 15px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s ease;
+        border-radius: 1px;
+    }
+  
+    .accordion-header:hover {
+        background: linear-gradient(135deg,  #066284, #1293c2);
+    }
+  
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        background-color:   #021c25;
+        padding: 0 20px;
+        font-size: 16px;
+        transition: max-height 0.4s ease-out, padding 0.3s ease-out;
+    }
+  
+    .accordion-item.active .accordion-content {
+        max-height: 350px; /* Adjust height to fit the map */
+        padding: 15px 20px;
+    }
+  
+    .icon {
+        font-size: 20px;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+  
+    iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        margin-top: 10px;
+    }
+  </style>
+  <div class="maps">
+  <div class="accordion">
+    
+    
+  
+    <div class="accordion-item">
+        <div class="accordion-header">
+            Cape Town
+            <span class="icon">+</span>
+        </div>
+        <div class="accordion-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135418.91830662437!2d18.35497548952176!3d-33.91886184780416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6758a31c55cb%3A0xf05a32b610df3c0!2sCape%20Town!5e0!3m2!1sen!2sza!4v1710000000001"></iframe>
+        </div>
     </div>
-      
-</br>
-<p id="location"></p>
-<div class="location" align="center">
-    <h2 style="color:#c4e7f3; font-size: 20px;">Our Main Branch</h2>
-    <iframe  
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114763.09130869254!2d27.88298094299403!3d-26.270759408420394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e97c29f5f9b%3A0x49ee70f41a4c4a3e!2sGauteng!5e0!3m2!1sen!2sza!4v1710768573923" 
- width="95%" 
-height="280" 
-style="border:0;" 
-allowfullscreen="" 
-loading="lazy" 
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</div>
-
-<style>
-  .maps{
-      font-family: 'Poppins', sans-serif;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      margin-top: 10px;
-  }
-
-  .accordion {
-      width: 95%;
-      max-width: 800px;
-  }
-
-  .accordion-item {
-      margin-bottom: 10px;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out;
-  }
-
-  .accordion-header {
-      background: linear-gradient(135deg, #066284,  #066284);
-      color:  #b3d8e5;
-      padding: 15px 20px;
-      font-size: 18px;
-      cursor: pointer;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: background 0.3s ease;
-      border-radius: 1px;
-  }
-
-  .accordion-header:hover {
-      background: linear-gradient(135deg,  #066284, #1293c2);
-  }
-
-  .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      background-color:   #021c25;
-      padding: 0 20px;
-      font-size: 16px;
-      transition: max-height 0.4s ease-out, padding 0.3s ease-out;
-  }
-
-  .accordion-item.active .accordion-content {
-      max-height: 350px; /* Adjust height to fit the map */
-      padding: 15px 20px;
-  }
-
-  .icon {
-      font-size: 20px;
-      font-weight: bold;
-      transition: transform 0.3s ease;
-  }
-
-  iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      margin-top: 10px;
-  }
-</style>
-<div class="maps">
-<div class="accordion">
+  
+    <div class="accordion-item">
+        <div class="accordion-header">
+            Eastern Cape
+            <span class="icon">+</span>
+        </div>
+        <div class="accordion-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380670.323985777!2d24.691986942187496!3d-32.29684015774656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e6412f0c4e1c64d%3A0x2eb5c3e07a71b7a3!2sEastern%20Cape!5e0!3m2!1sen!2sza!4v1710000000002"></iframe>
+        </div>
+    </div>
+  
+    <div class="accordion-item">
+        <div class="accordion-header">
+            Durban
+            <span class="icon">+</span>
+        </div>
+        <div class="accordion-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14326.77594666794!2d31.021840554632927!3d-29.858680292252108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7000000000001%3A0x5c737ccabef5410!2sDurban!5e0!3m2!1sen!2sza!4v1710000000003"></iframe>
+        </div>
+    </div>
+  
+    <div class="accordion-item">
+        <div class="accordion-header">
+            Northern Cape
+            <span class="icon">+</span>
+        </div>
+        <div class="accordion-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1377229.7989081372!2d21.334674863819642!3d-29.04668012043205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebd662c5f621c1d%3A0xd3d8a61a4632855a!2sNorthern%20Cape!5e0!3m2!1sen!2sza!4v1710000000004"></iframe>
+        </div>
+    </div>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function () {
+            const item = this.parentElement;
+            const isActive = item.classList.contains('active');
+  
+            document.querySelectorAll('.accordion-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.icon').textContent = '+'; // Reset all icons to +
+            });
+  
+            if (!isActive) {
+                item.classList.add('active');
+                this.querySelector('.icon').textContent = '−'; // Change icon to -
+            }
+        });
+    });
+  </script>
+  </div>
   
   
-
-  <div class="accordion-item">
-      <div class="accordion-header">
-          Cape Town
-          <span class="icon">+</span>
-      </div>
-      <div class="accordion-content">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d135418.91830662437!2d18.35497548952176!3d-33.91886184780416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6758a31c55cb%3A0xf05a32b610df3c0!2sCape%20Town!5e0!3m2!1sen!2sza!4v1710000000001"></iframe>
-      </div>
-  </div>
-
-  <div class="accordion-item">
-      <div class="accordion-header">
-          Eastern Cape
-          <span class="icon">+</span>
-      </div>
-      <div class="accordion-content">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380670.323985777!2d24.691986942187496!3d-32.29684015774656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e6412f0c4e1c64d%3A0x2eb5c3e07a71b7a3!2sEastern%20Cape!5e0!3m2!1sen!2sza!4v1710000000002"></iframe>
-      </div>
-  </div>
-
-  <div class="accordion-item">
-      <div class="accordion-header">
-          Durban
-          <span class="icon">+</span>
-      </div>
-      <div class="accordion-content">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14326.77594666794!2d31.021840554632927!3d-29.858680292252108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7000000000001%3A0x5c737ccabef5410!2sDurban!5e0!3m2!1sen!2sza!4v1710000000003"></iframe>
-      </div>
-  </div>
-
-  <div class="accordion-item">
-      <div class="accordion-header">
-          Northern Cape
-          <span class="icon">+</span>
-      </div>
-      <div class="accordion-content">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1377229.7989081372!2d21.334674863819642!3d-29.04668012043205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebd662c5f621c1d%3A0xd3d8a61a4632855a!2sNorthern%20Cape!5e0!3m2!1sen!2sza!4v1710000000004"></iframe>
-      </div>
-  </div>
-</div>
-
-<script>
-  document.querySelectorAll('.accordion-header').forEach(header => {
-      header.addEventListener('click', function () {
-          const item = this.parentElement;
-          const isActive = item.classList.contains('active');
-
-          document.querySelectorAll('.accordion-item').forEach(i => {
-              i.classList.remove('active');
-              i.querySelector('.icon').textContent = '+'; // Reset all icons to +
-          });
-
-          if (!isActive) {
-              item.classList.add('active');
-              this.querySelector('.icon').textContent = '−'; // Change icon to -
-          }
-      });
-  });
-</script>
-</div>
-
+    
     <div class="footer-bottom">
       <div class="copyright">© 2025 ELITE KITCHEN DESIGNS. All rights reserved. Powered by Lucas Mkohlakali</div>
     </div>
@@ -1245,4 +1369,3 @@ referrerpolicy="no-referrer-when-downgrade">
     </body>
   
     </html>
-
