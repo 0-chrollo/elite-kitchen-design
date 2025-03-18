@@ -527,6 +527,217 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+<style>
+  
+  .promo-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/1458F/production/_101934338_hi004089221.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .promo-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .promo-text {
+    flex: 1;
+    color: white;
+    padding-right: 2rem;
+  }
+  
+  .promo-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .promo-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .promo-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  
+  
+  .video-container {
+    flex: 1;
+    position: relative;
+    padding-top: calc(9 / 16 * 100%);
+    background-color: rgba(201, 164, 92, 0.1);
+    cursor: pointer;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(201, 164, 92, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .play-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(201, 164, 92, 0.3);
+    animation: pulse 2s infinite;
+  }
+  
+  .play-button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 25px solid #fff;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+  }
+  
+  .video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .video-frame.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .promo-content {
+      flex-direction: column;
+    }
+    
+    .promo-text {
+      padding-right: 0;
+      padding-bottom: 2rem;
+    }
+    
+    .video-container {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="promo-container">
+  <div class="promo-content">
+    <div class="promo-text">
+      <div class="promo-label">PROMO VIDEO</div>
+      <h1 class="promo-title">The world's most desirable kitchens</h1>
+      <p class="promo-description">What sets us apart from the rest is our visionary goal & truly unique designs that are specially curated to perfection for our clients.</p>
+      
+    </div>
+    
+    <div class="video-container">
+      <div class="video-overlay">
+        <div class="play-button"></div>
+      </div>
+      <div class="video-frame">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+          <iframe src="https://player.vimeo.com/video/1066713804?h=f234f71cf7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ELITE KITCHEN DESIGNS"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoContainer = document.querySelector('.video-container');
+    const videoOverlay = document.querySelector('.video-overlay');
+    const videoFrame = document.querySelector('.video-frame');
+    
+    videoOverlay.addEventListener('click', function() {
+      videoFrame.classList.add('active');
+      videoOverlay.style.display = 'none';
+      
+      // Add iframe source dynamically to prevent autoloading before click
+      const iframe = videoFrame.querySelector('iframe');
+      const src = iframe.src;
+      iframe.src = src + '&autoplay=1';
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 
 <div class="service">
